@@ -110,6 +110,7 @@ if page == "Executive Dashboard":
         * **The Vertical Position:** Notice the Red Box (At Risk) is higher than the Green Box. This means households that fail to adopt have a much higher 'Market Climb Index'.
         * **The Conclusion:** Physical isolation (distance + high altitude) is a 'hard barrier.' If the Index is above 15, households are significantly more likely to quit using the stove because the effort to get fuel is too high.
         """)
+        
 
 # --- PAGE 2: RISK PREDICTOR (Single) ---
 elif page == "Risk Predictor (Single)":
@@ -234,3 +235,25 @@ elif page == "Model Performance":
     st.title("⚙️ Model Technical Validation")
     st.json(meta)
     st.info("This model uses HistGradientBoosting which natively handles missing values and uses a 'balanced' class weight to adjust for low adoption frequency.")
+
+
+# Place this at the very bottom of app.py, outside of any column or IF block
+st.markdown("""
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(14, 17, 23, 0.8);
+        color: #9ea0a5;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        z-index: 100;
+    }
+    </style>
+    <div class="footer">
+        Built by Mr. Emmanuel Ansah as part of the DelAgua Data Science Assessment • February 2026
+    </div>
+    """, unsafe_allow_html=True)
