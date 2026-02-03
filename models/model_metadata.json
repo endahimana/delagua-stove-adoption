@@ -1,0 +1,1 @@
+{"training_date": "2026-02-03", "roc_auc": 0.6364105047238036, "accuracy": 0.605625, "features": ["district", "latitude", "longitude", "household_size", "baseline_fuel_kg_person_week", "distance_to_market_km", "elevation_m", "market_climb_index", "relative_remoteness"]}
